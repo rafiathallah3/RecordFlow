@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Macro Recorder</title>
+	<link rel="stylesheet" href="/src/bootstrap.min.css">
+	<script type="module" src="src/main.ts"></script>
+
+	<style>
+		html, body {
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid" style="height: 90%">
+		<div style="height: 100%; overflow: auto;">
+			<table class="table">
+				<thead>
+					<tr>
+						<th style="width: 10%;">#</th>
+						<th style="width: 45%;">Type</th>
+						<th style="width: 35%;">Value</th>
+						<th style="width: 30%;">Time</th>
+					</tr>
+				</thead>
+				<tbody id="TableInput">
+					<!-- <tr>
+						<th scope="row">1</th>
+						<td>Mouse Movement</td>
+						<td>(11, 11)</td>
+						<td>0.12</td>
+					</tr> -->
+				</tbody>
+			</table>
+		</div>
+		<div class="row g-2">
+			<div class="col-6">
+				<button class="btn btn-success w-100" id="TombolRecord">Record (F6)</button>
+			</div>
+			<div class="col-6">
+				<button class="btn btn-success w-100" id="TombolMainRecord">Play (F7)</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
